@@ -16,6 +16,10 @@
         "migrations:down": "yarn knex migrate:down --knexfile ./src/knexfile.ts --migrations-directory ./database/migrations",
         "db:seed": "yarn knex seed:run --knexfile ./src/knexfile.ts --migrations-directory ./database/seeds"
     },
+    "jest": {
+        "preset": "ts-jest",
+        "testEnvironment": "node"
+    },
     "packageManager": "yarn@3.6.1",
     "dependencies": {
         "cors": "^2.8.5",
